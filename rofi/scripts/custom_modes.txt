@@ -1,0 +1,3 @@
+"wallpaper:~/.config/rofi/scripts/wallpaper.sh" 
+
+Looks for wallpapers in .config/hypr/wallpapers folder and sets selected. Must be preloaded.
