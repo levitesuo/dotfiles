@@ -1,0 +1,166 @@
+* {
+  border: none;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 13px;
+  min-height: 10px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#window {
+  transition: none;
+  color: transparent;
+  background: transparent;
+}
+
+#network {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #bd93f9;
+}
+
+#pulseaudio {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #abe9b3;
+}
+
+#battery {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #89dceb;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #a6e3a1;
+}
+
+#battery.critical:not(.charging) {
+  color: #b5e8e0;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    color: #bf616a;
+    background-color: #b5e8e0;
+  }
+}
+
+#backlight {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #f8bd96;
+}
+
+#clock {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #fab387;
+}
+
+#cpu {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #b4befe;
+}
+#memory {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #89b4fa;
+}
+
+#bluetooth {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #74c7ec;
+}
+
+#mpris {
+  margin: 0 5;
+  padding: 0 5;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #fae3b0;
+}
+
+#workspaces button {
+  margin: 0 5;
+  padding: 0 5;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  padding-bottom: 2px;
+
+  color: #7dc4e4;
+  transition: all 200ms;
+}
+
+#workspaces button.active {
+  margin: 0 5;
+  padding: 0 5;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #f5bde6;
+  transition: all 200ms;
+}
+
+#workspaces button.special {
+  margin: 0 5;
+  padding: 0 5;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid;
+
+  color: #f38ba8;
+  transition: all 200ms;
+}
