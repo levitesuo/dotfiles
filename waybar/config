@@ -74,7 +74,7 @@
 		"on-click": "rofi -show wallpaper -modes 'wallpaper:~/.config/rofi/scripts/wallpaper.sh'"
 	},
 	"mpris": {
-		"ignored-players":["chromium"],
+		"ignored-players":["chromium", "brave"],
 		"format": "{player_icon} {artist} - {title} {status_icon} ",
 		"player-icons": {
 			"spotify":""

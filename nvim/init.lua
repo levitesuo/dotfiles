@@ -1,1 +1,1 @@
-require("levitesuo")
+require('levitesuo')

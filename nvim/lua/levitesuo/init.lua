@@ -1,3 +1,5 @@
-require("levitesuo.packer")
-require("levitesuo.remap")
-require("levitesuo.set")
+require('levitesuo.core.options')
+require('levitesuo.core.keymaps')
+
+require('levitesuo.lazy')
+
