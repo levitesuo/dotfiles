@@ -18,3 +18,5 @@ opt.incsearch = true
 opt.termguicolors = true
 
 opt.scrolloff = 10
+
+opt.clipboard:append("unnamedplus")
