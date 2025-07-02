@@ -60,7 +60,8 @@
 		"class<discord>":"",
 		"class<Google-chrome> title<.*reddit.*>": "󰑍",
 		"code": "󰨞",
-		"brave": ""
+		"brave": "",
+        "title<.*nvim.*": ""
 		}
  	},
 	"memory": {

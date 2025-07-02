@@ -13,10 +13,6 @@ with subprocess.Popen(["hyprctl", "clients", "-j"], stdout=subprocess.PIPE) as p
     ret = proc.stdout.read().decode("utf-8")
     windows = json.loads(ret)
 
-with subprocess.Popen(["hyprctl", "cursorpos", "-j"], stdout=subprocess.PIPE) as proc:
-    ret = proc.stdout.read().decode("utf-8")
-    cursorpos = json.loads(ret)
-
 if len(sys.argv) < 2:
     sys.exit("The program must be called wits one or two arguments.")
 
@@ -38,5 +34,15 @@ if len(sys.argv) == 3:
 else:
     wanted_windows = windows_with_class
 
-def distance(e):
 
+def focus_history(e):
+    if e["focusHistoryID"] == 0:
+        return 100
+    return e["focusHistoryID"]
+
+
+wanted_windows.sort(key=focus_history)
+
+subprocess.run(
+    ["hyprctl", "dispatch", "focuswindow", f"address:{wanted_windows[0]['address']}"]
+)

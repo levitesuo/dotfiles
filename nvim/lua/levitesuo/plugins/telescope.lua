@@ -4,14 +4,6 @@ return {
 		local builtin = require("telescope.builtin")
 
 		require("telescope").setup({
-			-- pickers = {
-			-- 	find_files = {
-			-- 		theme = "dropdown",
-			-- 	},
-			-- 	live_grep = {
-			-- 		theme = "dropdown",
-			-- 	},
-			-- },
 			defaults = {
 				layout_strategy = "center",
 				layout_config = {},

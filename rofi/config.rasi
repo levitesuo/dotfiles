@@ -15,7 +15,7 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-    icon-theme: "Oranchelo";
+    icon-theme: "Papirus";
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
@@ -25,6 +25,7 @@ configuration {
     display-window: " 󰕰  Window";
     display-Network: " 󰤨  Network";
     display-wallpaper: " 󰸉  Wallpaper";
+    display-dev: "   Dev";
     sidebar-mode: false;
 /*	drun-url-launcher: "xdg-open";*/
 /*	disable-history: false;*/
