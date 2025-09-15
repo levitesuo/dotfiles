@@ -5,7 +5,7 @@ profile docked {
 
 profile luola {
   output "DP-3" enable position 0,0
-  output "eDP-1" disable
+  output "eDP-1" disable 
 }
 
 profile undocked {
